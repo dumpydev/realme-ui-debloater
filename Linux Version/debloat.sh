@@ -1,7 +1,4 @@
-#!/usr/bin/bash
-echo "Do you want to Debloat your Device?[y/n]"
-read input
-if [[ "$input" == "y" ]] || [[ "$input" == "yes" ]] || [[ "$input" == "Y" ]]; then
+
     ./adb wait-for-any-device
     ./adb reconnect
     ./adb wait-for-any-device
@@ -96,8 +93,3 @@ if [[ "$input" == "y" ]] || [[ "$input" == "yes" ]] || [[ "$input" == "Y" ]]; th
     ./adb shell pm disable-user com.nearme.statistics.rom
     ./adb shell pm disable-user com.glance.internet
     ./adb shell pm disable-user com.heytap.accessory
-     echo "Your realme device has been Debloated"
-else
-    echo "Abort."
-fi
-
