@@ -1,14 +1,4 @@
-@echo OFF
-set s=---------------------------------------------------------------------------
-set m1= Script made By realkarthiknair
-set m2= Go turn on usb debugging if you haven't did till now and connect your device to pc.
-set m3= you wont face any issues 99.69% of times, but still take backup of really important files
-echo %m1%
-echo %m3%
-echo %s%
-echo %m2%
-echo %s%
-pause
+
 adb wait-for-any-device
 adb reconnect
 adb wait-for-any-device
@@ -102,11 +92,3 @@ adb shell pm disable-user com.heytap.market
 adb shell pm disable-user com.android.fmradio
 adb shell pm disable-user com.nearme.statistics.rom
 adb shell pm disable-user com.glance.internet
-echo %s%
-echo your device has been debloated
-echo %s%
-echo %m1%
-echo %s%
-echo if you like this work, dont forget to follow realkarthiknair at instagram 
-echo %s%
-pause
